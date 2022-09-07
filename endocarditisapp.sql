@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Sep 05, 2022 at 10:29 AM
+-- Generation Time: Sep 07, 2022 at 09:50 AM
 -- Server version: 5.7.34
 -- PHP Version: 7.4.21
 
@@ -72,9 +72,9 @@ CREATE TABLE `patienten` (
 --
 
 INSERT INTO `patienten` (`id`, `vorname`, `nachname`, `geburtsdatum`, `beginn`, `ende`, `geschlecht`, `vorgeschichte`, `arztkontakt`) VALUES
-(1, 'Markus', 'Mustermann', '1991-01-01', '2022-07-01', '2023-01-31', 1, 'folgt', 'Dr. Hilfreich\nTelefon 01234-5456788\nemail praxis@doktor-hilfreich.kardiologe.de'),
-(2, 'Maria', 'Musterfrau', '1982-02-02', '2022-06-01', '2022-12-31', 2, 'folgt', 'Dr. Anton Herzlich\nPraxis 0987-6544321\nin NotfÃ¤llen 0155-19283746\n'),
-(3, 'Jo', 'Mustermensch', '2003-03-03', '2022-07-15', '2022-07-31', 3, 'folgt', 'PD Dr. A. von Herz\nTelefon 08474-314768'),
+(1, 'Markus', 'Mustermann', '1991-01-01', '2022-07-01', '2023-01-31', 1, 'o	Z.n. nach Mitralklappenersatz und rezidivierte Staph. Epidermidis Bakteriemien -> schwach positiv im PET-CT & echokardiographisch progrediente\no	An den intraoperativen PrÃ¤paraten (MKE) konnte kein Keim nachgewiesen werden \no	Staph Epidemidis wurde am HSM-kabel gefunden (eine transvenÃ¶se HSM Kabel Explantation ist technisch einfacher und risikoarmer als Wechsel einer Mitraklappenprothese)\no	FISH PCR:  Stark degradierte Mikroorganismen; keine Differenzierung mÃ¶glich\no	Nach einem viertel Jahr wurde der Patient aus einem Krankenhaus entlassen\no	Es ist wichtig auch an eventuelle konkurrierende Ursachen der BakteriÃ¤mie  bei Patienten mit Klappenersatz zu denken', 'Dr. Hilfreich\nTelefon 01234-5456788\nemail praxis@doktor-hilfreich.kardiologe.de'),
+(2, 'Maria', 'Musterfrau', '1979-06-08', '2022-06-01', '2022-12-31', 2, 'ischÃ¤mische Herzinsuffizienz;\nVorhandensein LVAD;\ngelistet fÃ¼r eine Herztransplantation;\nim Perikardpunktat PCR positiv auf Coxiella burnetii;\npositive Anamnese (Brandenburgischer SchÃ¤fer im Freundeskreis); \nBK negativ, Serologie wurde an das Konsiliarlabor versendet; Hydroxychloroquine Therapie bereits angedacht', 'Dr. Anton Herzlich\nPraxis 0987-6544321\nin NotfÃ¤llen 0155-19283746\n'),
+(3, 'Jo', 'Mustermensch', '2003-03-03', '2022-07-15', '2022-07-31', 3, 'Q-Fieber in der Vorgeschichte; \naktuell Endokarditis mit V.a. dritte Episode der Coxiellen-Infektion bei progredienter Vegetation im TEE;\nZ.n. Mitral- und Aortenklappenersatz (Streptokokkenbiofilm) und Re-AKE & MKE; Mitralklappe aktuell hochgradig stenosiert; \nAbx Therapie mit Hydroxychloroquine und Doxycyclin und anschlieÃŸend Ampicillin, Flucloxacillin&Gentamicin (Umstellung auf Ceftazidim), das Deutsche Referenzzentrum in Stuttgart und das EuropÃ¤ische Referenzzentrum in Marseille war/ist in der serologischen Diagnostik involviert, PCR wurde bisher nicht durchgefÃ¼hrt; \nUngÃ¼nstiger Ablauf im Herzzentrum -> Herzklappenprobe hÃ¤tte in FISH Fix eingelegt werden sollen, ist dennoch in NaCl eingelegt und nicht ordentlich beschriftet worden -> die zweite Klappe ist mutmaÃŸlich nach Marseille versendet worden; es wurden viele Blutkulturen abgenommen, bisher allerdings kulturnegativ, Serumprobe sei auf dem Weg nach Stuttgart', 'PD Dr. A. von Herz\nTelefon 08474-314768'),
 (5, 'Ungueltig', 'Invalid', '1990-01-01', '2022-09-01', '2022-09-08', 1, '', '');
 
 -- --------------------------------------------------------
@@ -145,7 +145,7 @@ ALTER TABLE `patienten`
 -- AUTO_INCREMENT for table `tagebuch_eintraege`
 --
 ALTER TABLE `tagebuch_eintraege`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
